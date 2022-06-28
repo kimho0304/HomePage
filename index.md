@@ -1,37 +1,74 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20223067_KimHo</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="centre.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
 
-You can use the [editor on GitHub](https://github.com/kimho0304/HomePage/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<body>
+    <!--<img src="fish.png" id="fish">-->
+    <div id="items" style="display: inline;">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <header>
+        <h1 id="title">20223067 キムホ</h1>
+    </header>
+    
+    <nav>
+        <button onclick="create()">나를 클릭하면 음식이 떨어질거야</button>
+    </nav>
 
-### Markdown
+    <section>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <div id="centre1" class="centre">
+            <img src="img/ui/left-arrow.png" id="left_arrow" class="arrow" onclick = "img_change(-1)" >
 
-```markdown
-Syntax highlighted code block
+            <div id="looks">
+                <img src="img/looks/img1.png" id="picture">
+            </div>
 
-# Header 1
-## Header 2
-### Header 3
+            <img src="img/ui/right-arrow.png" id="right_arrow" class="arrow" onclick = "img_change(1)">
+        </div>
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+        <div id="centre2" class="centre">
+            <img src="img/albums/graduation.jpg" onclick="chg_img(event)">
+            <img src="img/albums/808s&heartbreak.jpg" onclick="chg_img(event)">
+            <img src="img/albums/mbdtf.jpg" onclick="chg_img(event)">
+            <img src="img/albums/yeezus.jpg" onclick="chg_img(event)">
+            <img src="img/albums/thelifeofpablo.jpg" onclick="chg_img(event)">
+            <img src="img/albums/ye.jpg" onclick="chg_img(event)">
+            <img src="img/albums/jesusisking.jpg" onclick="chg_img(event)">
+            <img src="img/albums/donda.jpg" onclick="chg_img(event)">
+        </div>
+        
+        <div id="centre3" class="centre">
+            <h2 id="mp3_title">Stronger</h2>
+            <img src="img/albums/graduation.jpg" id="mp3_img">
+            <audio controls id="mp3" src="mp3/Stronger.mp3"></audio>
+        </div>
+        
+    </section>
 
-**Bold** and _Italic_ and `Code` text
+    <footer id="footer">
+        <div></div>
+        <div></div>
+        <div id="SNS">
+        <p>SNS: </p>
+        <a href="https://www.instagram.com/ho_k2mo/" target="_blank"><img src="img/sns/insta.png" id="insta"></a>
+        <a href="https://www.facebook.com/profile.php?id=100015535966543" target="_blank"><img src="img/sns/face.png" id="face"></a>
+        </div>
+    </footer>
+</div>
+    
+<script src="centre.js"></script>
+<script src="background.js"></script>
+    
+</body>
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kimho0304/HomePage/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</html>
